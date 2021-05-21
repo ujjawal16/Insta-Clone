@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix instaclone && npm run build --prefix instaclone"
   },
   "author": "",
   "license": "ISC",
